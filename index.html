@@ -46,8 +46,9 @@
 
             </div>
             <div class="hero-middle text-center">
-                <h1 class=" text-gray-800  text-2xl font-bold  py-2 " >Plant a Tree, Grow a Future</h1>
-                <p class=" text-gray-800 text-sm py-2">Join our mission to plant 1 million trees and make the Earth greener for future
+                <h1 class=" text-gray-800  text-2xl font-bold  py-2 ">Plant a Tree, Grow a Future</h1>
+                <p class=" text-gray-800 text-sm py-2">Join our mission to plant 1 million trees and make the Earth
+                    greener for future
                     generations.</p>
                 <button class="py-2 mt-5 text-[#15803D] px-5 rounded-full bg-[#FACC15]">Get Involved</button>
             </div>
@@ -57,6 +58,70 @@
         </div>
     </div>
 
+    <!-- main -->
+  <main class="pt-12 bg-[#F0FDF4]">
+    <!-- Page Title -->
+    <h1 class="text-center text-gray-800 text-[19px] font-bold pb-3">
+      Choose Your Trees
+    </h1>
+
+    <!-- Grid Layout -->
+    <div class="grid md:grid-cols-12 gap-6 w-11/12 mx-auto">
+
+      <!-- Categories Menu -->
+      <div class="menu md:col-span-2">
+        <h1 class="text-black text-xl font-semibold pb-2">Categories</h1>
+        <ul id="menuLi" class="menu  w-full [&_li>*]:rounded-none p-0 text-sm">
+          <!-- dynamic menu items go here -->
+        </ul>
+      </div>
+
+      <!-- Middle Cards Section -->
+      <div class="md:col-span-8 bg-white p-2">
+        <div id="gridCardParent" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- dynamic cards go here -->
+        </div>
+      </div>
+
+      <!-- Cart Section -->
+      <div class="cart md:col-span-2 bg-white p-4 rounded shadow-sm">
+        <h1 class="text-lg font-semibold mb-2">Your Cart</h1>
+        <div>
+          <h1>Title</h1>
+          <p>47618</p>
+          <p>x</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<dialog id="plantModal" class="modal">
+  <div class="modal-box max-w-lg text-left">
+    <h3 id="modalTitle" class="text-xl font-bold mb-3"></h3>
+
+    <img id="modalImage" src="" alt="" class="w-full h-60 object-cover rounded-lg mb-3" />
+
+    <!-- Category -->
+    <p><span class="font-bold text-black">Category:</span> <span id="modalCategory"></span></p>
+
+    <!-- Price -->
+    <p><span class="font-bold text-black">Price:</span> <span id="modalPrice" class="text-green-600"></span></p>
+
+    <!-- Description -->
+    <p><span class="font-bold text-black">Description:</span> <span id="modalDescription"></span></p>
+
+    <div class="modal-action justify-end">
+      <form method="dialog">
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+
+<script src="./index.js"></script>
 </body>
 
 </html>
