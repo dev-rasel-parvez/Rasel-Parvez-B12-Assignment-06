@@ -101,7 +101,7 @@ const plants = (Plants) => {
             <button id ="${plant.id}" class="btn btn-sm btn-outline border-green-600 text-green-600 hover:bg-white ">${plant.category}</button>
             <span class="font-semibold text-lg text-green-600">৳${plant.price}</span>
           </div>
-          <button class="btn bg-[#15803D] text-white w-full mt-3">Add To Cart</button>
+          <button class="btn rounded-full bg-[#15803D] text-white w-full mt-3">Add To Cart</button>
         </div>
       </div>
     `;
