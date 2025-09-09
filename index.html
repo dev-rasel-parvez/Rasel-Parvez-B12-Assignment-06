@@ -25,7 +25,8 @@
     <!-- header -->
     <header class=" bg-[#15803D] ">
         <div class="flex justify-between w-11/12 mx-auto py-2 items-center">
-            <div class="left">
+            <div class="left flex items-center">
+                <img class="max-w-[40px] max-h-[40px]" src="./assets/about-removebg-preview.jpg" alt="">
                 <h1 class="text-white font-bold">Green Earth</h1>
             </div>
             <div class="middle">
@@ -102,7 +103,7 @@
     <dialog id="plantModal" class="modal">
         <div class="modal-box max-w-lg text-left">
             <h3 id="modalTitle" class="text-xl font-bold mb-3"></h3>
-            <img id="modalImage" src="" alt="" class="w-full h-60 object-cover rounded-lg mb-3" />
+            <img id="modalImage" src="" alt="" class="w-full max-h-[250px] object-cover rounded-lg mb-3" />
             <!-- Category -->
             <p><span class="font-bold text-black">Category:</span> <span id="modalCategory"></span></p>
             <!-- Price -->
@@ -155,21 +156,21 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Card 1 -->
-                <div class="bg-white rounded-md shadow-sm p-6 text-center">
+                <div class="bg-white hover:bg-green-300  rounded-md shadow-sm p-6 text-center">
                     <h3 class="text-2xl font-bold text-green-700">500K+</h3>
                     <p class="text-gray-600">Trees Planted</p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-white rounded-md shadow-sm p-6 text-center">
+                <div class="bg-white hover:bg-green-300 rounded-md shadow-sm p-6 text-center">
                     <h3 class="text-2xl font-bold text-green-700">120+</h3>
                     <p class="text-gray-600">Communities Involved</p>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-white rounded-md shadow-sm p-6 text-center">
-                    <h3 class="text-2xl font-bold text-green-700">30+</h3>
-                    <p class="text-gray-600">Countries Reached</p>
+                <div class="bg-white hover:bg-green-300 rounded-md shadow-sm p-6 text-center">
+                    <h3 class="text-2xl font-bold  text-green-700 ">30+</h3>
+                    <p class="text-gray-600 ">Countries Reached</p>
                 </div>
             </div>
         </div>

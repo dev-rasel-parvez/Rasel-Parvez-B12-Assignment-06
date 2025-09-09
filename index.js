@@ -35,7 +35,7 @@ const menuCategory = (menuList) => {
   menuList.forEach(category => {
     const categoryName = category.category_name;
     menuUl.innerHTML += `
-      <li id="${category.id}" class="menu-list-item hover:bg-[#15803D]"><a>${categoryName}</a></li>
+      <li id="${category.id}" class="menu-list-item hover:bg-[#15803D] hover:text-white"><a>${categoryName}</a></li>
     `;
   });
   setupMenuClicks();
@@ -96,7 +96,7 @@ const plants = (Plants) => {
         </figure>
         <div class="card-body flex flex-col">
           <h2 class=" card-modal-button card-title text-start">${plant.name}</h2>
-          <p class="text-sm flex-grow">${plant.description}</p>
+          <p class="text-sm flex-grow line-clamp-3">${plant.description}</p>
           <div class="flex justify-between items-center w-full mt-auto">
             <button id ="${plant.id}" class="btn btn-sm btn-outline border-green-600 text-green-600 hover:bg-white ">${plant.category}</button>
             <span class="font-semibold text-lg text-green-600">৳${plant.price}</span>
